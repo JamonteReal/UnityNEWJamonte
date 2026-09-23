@@ -8,6 +8,6 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         // This implements the movement of the bullet - It'll move forward at the same speed regardless of FPS
-        transform.position += bulletSpeed * transform.forward * Time.delta;
+        transform.position += bulletSpeed * transform.forward * Time.deltaTime;
     }
 }
