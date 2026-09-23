@@ -10,8 +10,8 @@ public class CharacterScript : MonoBehaviour
         // GetKeyDown fires once per press, preventing infinite spawns every frame
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Spawn with default orientation
-            Instantiate(bulletCloneTemplate);
+            // Spawn position -- Instantiate(original, positon, rotation)
+            Instantiate(bulletCloneTemplate, transform.position, transform.rotation);
         }
     }
 }
